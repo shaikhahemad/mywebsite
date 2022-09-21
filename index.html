@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio | Home |</title>
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="upper">
+
+    <nav class="navbar">
+      <div class="header">
+        <img id="dph" src="img/dp.png" alt="" />
+        <p class="hlogo">
+          Seven<snap>1</snap>
+        </p>
+      </div>
+      <button id="toggle" type="submit"><img id="menuimg" src="img/menu.png" alt="" />
+        <!--<i id="menuimg" class="fa fa-bars"></i></button>-->
+      </nav>
+      <ul id="menu">
+        <li><a id="home" href="#">Home</a></li>
+        <li><a id="proj">Projects</a></li>
+        <li><a id="abt">About</a></li>
+        <li><a id="cont">Contacts</a></li>
+      </ul>
+    </div>
+    <div id="mhome" class="main">
+      Home
+    </div>
+    <div id="project" class="main">
+    <!--   <h2>Calculator:</h2>
+    <p id="cals">SEE</p> -->
+      <iframe id="calc" src="projects/calc.html" height="550" width="359" title="Iframe Example"></iframe>
+    </div>
+    <div id="about" class="main">
+      About
+    </div>
+    <div id="contact">
+      <h2 class="">Social Media Links</h2><br>
+      <div class="center">
+        <div id="social-test">
+          <div class="social">
+            <div class="f11">
+              <a href="https://github.com/AhemadSk71"><i class="fa fa-github" aria-hidden="true"></i></i></a>
+              <a href="https://mobile.twitter.com/AhemadSK71"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/ahemad-shaikh-a58413204"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a>
+            </div>
+            <div class="f22">
+                <a href="https://www.facebook.com/shaikh.ahemad.1884"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/invites/contact/?i=1pckznehgtzgl&utm_content=gjvnveq"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://wa.me/917219855830"><i class="fa fa-whatsapp"></i></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--<div class="flex-center">
+                                                <i class="fa fa-github fa-4x icon-3d"></i>
+                                                <i class="fa fa-twitter fa-4x icon-3d"></i>
+                                              <i class="fa fa-facebook fa-4x icon-3d"></i>
+                                              <i class="fa fa-instagram fa-4x icon-3d"></i>
+                                              <i class="fa fa-whatsapp fa-4x icon-3d"></i>-->
+
+    </div>
+
+
+
+
+
+    <!--
+                                                                       <div class="footer">
+                                                                          <img class="dp" src="img/dp.png">
+                                                                          <p>
+                                                                            Created By - Ahemad Shaikh , BSc First Year ,<br>DSM Senior College Parbhani
+                                                                          </p>
+                                                                        </div>
+                                                                        -->
+
+  </body>
+  <script src="js/jQuery.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    $('#menu').hide();
+    $('#project').hide();
+    $('#about').hide();
+    //$('#calc').hide();
+    
+    $('#toggle').click(function() {
+      $('#menu').toggle();
+    });
+    
+    $('#proj').click(function() {
+      $('#mhome').hide();
+      $('#about').hide();
+      $('#project').show();
+    });
+    
+    $('#home').click(function() {
+      $('#mhome').show();
+      $('#project').hide();
+      $('#about').hide();
+    });
+    
+    $('#abt').click(function() {
+      $('#mhome').hide();
+      $('#project').hide();
+      $('#about').show();
+    });
+    
+   /* $('#cals').click(function(){
+      $('#calc').show();
+    });*/
+  </script>
+
+</html>
