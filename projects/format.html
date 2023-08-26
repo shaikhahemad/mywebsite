@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      body {
+        background: black;
+      }
+      #logo{
+        color:cyan;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #myText {
+        width: 250px;
+        height: 150px;
+        background:gray;
+        color: purple;
+        border:2px solid orange;
+      }
+      #click{
+        width:60px;
+        text-align: center;
+        border:2px solid red;
+        background:yellow;
+        color:brown;
+        border-radius: 10px;
+      }
+      #output{
+        color: white;
+        padding:8px;
+      }
+      #helper{
+        color: red;
+        opacity: 0.8;
+        font-size: 8px;
+      }
+      #brd{
+        color:lightgreen;
+        opacity: 0.5;
+        font-size: 6px;
+        margin:0;
+      }
+    </style>
+    <title>Text Formator</title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="brd">CREATED BY AHEMAD</p>
+      <h3 id="logo">Text Formator </h3>
+        <textarea id="myText"> </textarea>
+        <p id="helper">***Remove Extra Spaces***</p>
+        <p id="click">Format</p></p>
+      <div id="output"></div>
+    </div>
+    <script>
+      $("#click").click(function () {
+        let str = document.getElementById("myText").value;
+        let x = str.trim();
+        document.getElementById("output").innerHTML = x;
+      });
+    </script>
+  </body>
+</html>
